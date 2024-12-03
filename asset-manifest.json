@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/PAYROLLDOCS/static/css/main.f040b66e.css",
+    "main.js": "/PAYROLLDOCS/static/js/main.b66f6c4f.js",
+    "index.html": "/PAYROLLDOCS/index.html",
+    "main.f040b66e.css.map": "/PAYROLLDOCS/static/css/main.f040b66e.css.map",
+    "main.b66f6c4f.js.map": "/PAYROLLDOCS/static/js/main.b66f6c4f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f040b66e.css",
+    "static/js/main.b66f6c4f.js"
+  ]
+}
