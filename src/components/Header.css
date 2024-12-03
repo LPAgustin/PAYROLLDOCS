@@ -1,0 +1,19 @@
+.header {
+    background-color: #333333;
+    color: #ffffff;
+    display: flex; /* Activa flexbox */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    height: 40px; /* Ajusta esta altura según tu diseño */
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0; /* Asegura que no haya márgenes extra */
+    padding: 0; /* Asegura que no haya relleno extra */
+  }
+  
+  
+  .header h1 {
+    font-size: 1.8rem;
+  }
+  
