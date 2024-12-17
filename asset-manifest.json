@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.css": "/PAYROLLDOCS/static/css/main.f040b66e.css",
-    "main.js": "/PAYROLLDOCS/static/js/main.b66f6c4f.js",
+    "main.css": "/PAYROLLDOCS/static/css/main.97f14fc3.css",
+    "main.js": "/PAYROLLDOCS/static/js/main.8b73176b.js",
+    "static/media/logo2.png": "/PAYROLLDOCS/static/media/logo2.03902c9b7125956e661e.png",
+    "static/media/logo1.png": "/PAYROLLDOCS/static/media/logo1.438d19b1c2f5c1a9e6e0.png",
     "index.html": "/PAYROLLDOCS/index.html",
-    "main.f040b66e.css.map": "/PAYROLLDOCS/static/css/main.f040b66e.css.map",
-    "main.b66f6c4f.js.map": "/PAYROLLDOCS/static/js/main.b66f6c4f.js.map"
+    "main.97f14fc3.css.map": "/PAYROLLDOCS/static/css/main.97f14fc3.css.map",
+    "main.8b73176b.js.map": "/PAYROLLDOCS/static/js/main.8b73176b.js.map"
   },
   "entrypoints": [
-    "static/css/main.f040b66e.css",
-    "static/js/main.b66f6c4f.js"
+    "static/css/main.97f14fc3.css",
+    "static/js/main.8b73176b.js"
   ]
 }
