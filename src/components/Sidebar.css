@@ -7,13 +7,16 @@
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
   }
   
-  .sidebar h2 {
-    color: #ffffff;
-    font-size: 1.4rem;
-    margin: 0;
+  .sidebar-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 20px 0;
-    text-align: center;
-    border-bottom: 1px solid #333333;
+  }
+  
+  .logo-img {
+    max-width: 100px; /* Ajusta el tamaño del logo */
+    height: auto;
   }
   
   .sidebar ul {

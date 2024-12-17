@@ -1,11 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Sidebar.css';
+import logo1 from '../assets/logo1.png';
 
 function Sidebar() {
   return (
     <div className="sidebar">
-      <h2 className="sidebar-title">PAYROLL DOCS</h2>
+      <div className="sidebar-logo">
+        <img src={logo1} alt="Logo" className="logo-img" /> 
+      </div>
       <ul>
         <li><Link to="/">Inicio</Link></li>
         <li><Link to="/getting-started">Primeros Pasos</Link></li>
