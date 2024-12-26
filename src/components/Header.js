@@ -1,13 +1,13 @@
 import React from 'react';
 import './Header.css';
-import logo2 from '../assets/logo2.png';
+import logo2 from '../assets/logo2.png'; // Asegúrate de tener el logo en esta ruta
 
-function Header() {
+function Header({ isSidebarCollapsed }) {
   return (
-    <header className="header">
-      <h1>Payroll Crypto API Documentation</h1>
-      <div className="header-logo">
-        <img src={logo2} alt="Logo" className="logo-img" />
+    <header className={`header ${isSidebarCollapsed ? 'collapsed-sidebar' : ''}`}>
+      <div className="header-content">
+        <h1 className="header-title">Payroll Crypto API Documentation</h1>
+        <img src={logo2} alt="Whapy Logo" className="header-logo" />
       </div>
     </header>
   );

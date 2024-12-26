@@ -1,59 +1,88 @@
 .sidebar {
-    background-color: #121212;
-    width: 260px;
-    height: 100vh;
-    position: fixed;
-    overflow-y: auto;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
-  }
+  background-color: #121212;
+  width: 260px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  transition: 0.3s ease-in-out;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.sidebar.active {
+  transform: translateX(0);
+}
+
+.sidebar.inactive {
+  transform: translateX(-100%);
+}
   
-  .sidebar-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0;
-  }
+.sidebar-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+
   
-  .logo-img {
-    max-width: 100px; /* Ajusta el tamaño del logo */
-    height: auto;
-  }
+.logo-img {
+  max-width: 150px;
+}
   
-  .sidebar ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
+/* Lista */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
   
-  .sidebar ul li {
-    margin: 10px 0;
-  }
+.sidebar ul li {
+  margin: 15px 0;
+}
   
-  .sidebar ul li a {
-    color: #b3b3b3;
-    text-decoration: none;
-    padding: 10px 20px;
+.sidebar ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px 20px;
+  display: block;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover {
+  background-color: #1e1e1e;
+}
+
+/* Botón Hamburguesa */
+.hamburger {
+  display: none;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 1100;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
     display: block;
-    transition: background-color 0.3s, color 0.3s;
   }
-  
-  .sidebar ul li a:hover {
-    background-color: #1e1e1e;
-    color: #ffffff;
+
+  .sidebar {
+    width: 200px;
+    transform: translateX(-100%);
   }
-  
-  .sidebar ul li details summary {
-    color: #ffffff;
-    padding: 10px 20px;
-    cursor: pointer;
+
+  .sidebar.active {
+    transform: translateX(0);
   }
-  
-  .sidebar ul li details ul {
-    padding-left: 20px;
+
+  .main-content {
+    margin-left: 0;
   }
-  
-  .sidebar ul li details ul li a {
-    font-size: 0.9rem;
-    color: #b3b3b3;
-  }
-  
+}

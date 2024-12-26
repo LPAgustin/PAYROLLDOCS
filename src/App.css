@@ -47,12 +47,21 @@
 }
 
 .main-content {
-  margin-left: 260px; /* Espacio para el sidebar */
-  margin-top: 60px; /* Espacio para el header (ajústalo según la altura del header) */
-  padding: 20px; /* Opcional: agrega relleno interno */
-  background-color: #181818; /* Fondo del contenido */
-  color: #ffffff; /* Color del texto */
-  overflow-y: auto; /* Habilita el scroll si el contenido excede la altura */
+  margin-left: 260px;
+  margin-top: 60px; /* Espacio reservado para el header en desktop */
+  padding: 20px;
+  width: 100%;
+  background-color: #181818;
+  color: white;
+  overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0;
+    margin-top: 50px; /* Desplazar el contenido hacia abajo */
+    padding-top: 10px; /* Ajustar el padding superior para mantener consistencia */
+  }
 }
 
 .main-content h1 {
@@ -107,4 +116,23 @@
   background-color: #1e1e1e;
   transition: background-color 0.3s ease;
 }
+
+.hamburger {
+  display: none;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+}
+
 

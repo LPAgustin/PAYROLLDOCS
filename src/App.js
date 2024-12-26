@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Sidebar from './components/Sidebar';
 import Header from './components/Header';
 import Home from './pages/Home';
@@ -12,14 +12,19 @@ import FAQ from './pages/FAQ';
 import './App.css';
 
 function App() {
+  const isMobile = window.innerWidth <= 768; // Detecta si el ancho es de un dispositivo móvil
+
   return (
     <Router>
       <div className="app-container">
         <Sidebar />
         <div className="main-content">
-          <Header />
+          {/* Renderiza el header solo si no es móvil */}
+          {!isMobile && <Header />}
           <Routes>
-            <Route path="/" element={<Home />} />
+            {/* Redirige a "Inicio" por defecto */}
+            <Route path="/" element={<Navigate to="/inicio" />} />
+            <Route path="/inicio" element={<Home />} />
             <Route path="/getting-started" element={<GettingStarted />} />
             <Route path="/api-integration" element={<APIIntegration />} />
             <Route path="/qr-crypto" element={<QRCrypto />} />
